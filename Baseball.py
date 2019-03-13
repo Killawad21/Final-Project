@@ -8,7 +8,10 @@ the code is to determine if your three at bats get a single double triple or hom
 it does this by using the speed of the pitch, the angle of the bat, the speed of your hit
 and the speed of the outfielder
 '''
+def introduction(x):
+    print (x)
 
+introduction("Hello, if you are a baseball player this is for you, please follow commands and we will determine how you did")
 
 
 for i in range(3):
@@ -18,37 +21,37 @@ for i in range(3):
     speed_of_outfielder = 8.8
     overall_speed_of_ball = speed_of_bat - speed_of_pitch
     while angle_of_bat >= 0:
-        print ("hit in play")
+        print ("Hit in play")
         if angle_of_bat <= 5:
-            print ("your out")
+            print ("Your out")
             break
         elif angle_of_bat <= 30 and angle_of_bat >= 6:
-            print ("you got a single")
+            print ("You got a single")
             break
         else:
-            print("you hit high enough to get more than a single")
+            print("You hit high enough to get more than a single")
             x = True
             break
 # Uses overall_speed_of_ball and angle_of_bat to determine if infield or not
     while x == True:
         if overall_speed_of_ball >= 20 and angle_of_bat <= 50:
-            print ("you got a single")
+            print ("You got a single")
             break
         elif overall_speed_of_ball >= 21 and overall_speed_of_ball <= 60 and angle_of_bat >= 91:
-            print ("you got to the outfield")
+            print ("You got to the outfield")
             ball_catch = overall_speed_of_ball / speed_of_outfielder
 # Uses ball_catch to determine if the outfielder can reach the ball in time
             if ball_catch <= 7:
-                print ("ball caught")
+                print ("Ball caught")
                 break
             elif ball_catch >= 8 and ball_catch <= 10:
-                print ("you got a single")
+                print ("You got a single")
                 break
             elif ball_catch >= 11 and ball_catch <= 17:
-                print("you got a double")
+                print("You got a double")
                 break
             elif ball_catch >= 18 and ball_catch <= 30:
-                print("you got a triple")
+                print("You got a triple")
                 break
             else:
                 print ("HOMERUN!!!")
