@@ -12,7 +12,10 @@ and the speed of the outfielder
 def introduction(x, y, z, a, b, c):
     print (x)
     print (y)
-
+    print (z)
+    print (a)
+    print (b)
+    print (c)
 introduction ("Hello, if you are a baseball player this is for you, please follow commands and we will determine how you did")
 introduction (int(input("What is your name? ")))
 introduction (int(input("do you prefer a wooden or metal bat? ")))
@@ -39,7 +42,7 @@ for i in range(3):
             print("You hit high enough to get more than a single")
             x = True
             break
-# Uses overall_speed_of_ball and angle_of_bat to determine if infield or not
+# Uses overall_speed_of_ball and angle_of_bat to find if it gets to outfield
     while x == True:
         if overall_speed_of_ball >= 20 and angle_of_bat <= 50:
             print ("You got a single")
@@ -47,7 +50,7 @@ for i in range(3):
         elif overall_speed_of_ball >= 21 and overall_speed_of_ball <= 60 and angle_of_bat >= 91:
             print ("You got to the outfield")
             ball_catch = overall_speed_of_ball / speed_of_outfielder
-# Uses ball_catch to determine if the outfielder can reach the ball in time
+# Uses ball_catch to determine if the outfielder can reach the ball in time and determine what you get for how many bases you get
             if ball_catch <= 7:
                 print ("Ball caught")
                 break
