@@ -8,18 +8,25 @@ the code is to determine if your three at bats get a single double triple or hom
 it does this by using the speed of the pitch, the angle of the bat, the speed of your hit
 and the speed of the outfielder
 '''
-def introduction(x):
+# This is used to give me a sense of who the person is
+def introduction(x, y, z, a, b, c):
     print (x)
+    print (y)
 
-introduction("Hello, if you are a baseball player this is for you, please follow commands and we will determine how you did")
-
-
+introduction ("Hello, if you are a baseball player this is for you, please follow commands and we will determine how you did")
+introduction (int(input("What is your name? ")))
+introduction (int(input("do you prefer a wooden or metal bat? ")))
+introduction (int(input("How old are you? ")))
+introduction (int(input("How tall are you")))
+introduction (int(input("Good luck and have fun!!!")))
+# This part of code is used to find all of are variables for the full code
 for i in range(3):
     speed_of_pitch = int(input("What is the speed of the pitch: "))
     angle_of_bat = int(input("What is the angle of the bat: "))
     speed_of_bat = int(input("What is speed of the bat in newtons: "))
     speed_of_outfielder = 8.8
     overall_speed_of_ball = speed_of_bat - speed_of_pitch
+    # This part is to show if it can get by the pitcher
     while angle_of_bat >= 0:
         print ("Hit in play")
         if angle_of_bat <= 5:
