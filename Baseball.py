@@ -18,9 +18,9 @@ def introduction(x, y, z, a, b, c):
     print (c)
 introduction ("Hello, if you are a baseball player this is for you, please follow commands and we will determine how you did")
 introduction (int(input("What is your name? ")))
-introduction (int(input("do you prefer a wooden or metal bat? ")))
+introduction (int(input("Do you prefer a wooden or metal bat? ")))
 introduction (int(input("How old are you? ")))
-introduction (int(input("How tall are you")))
+introduction (int(input("How tall are you? ")))
 introduction (int(input("Good luck and have fun!!!")))
 # This part of code is used to find all of are variables for the full code
 for i in range(3):
@@ -31,37 +31,37 @@ for i in range(3):
     overall_speed_of_ball = speed_of_bat - speed_of_pitch
     # This part is to show if it can get by the pitcher
     while angle_of_bat >= 0:
-        print ("Hit in play")
+        print ("Hit in play.")
         if angle_of_bat <= 5:
-            print ("Your out")
+            print ("Your out.")
             break
         elif angle_of_bat <= 30 and angle_of_bat >= 6:
-            print ("You got a single")
+            print ("You got a single.")
             break
         else:
-            print("You hit high enough to get more than a single")
+            print("You hit high enough to get more than a single.")
             x = True
             break
 # Uses overall_speed_of_ball and angle_of_bat to find if it gets to outfield
     while x == True:
         if overall_speed_of_ball >= 20 and angle_of_bat <= 50:
-            print ("You got a single")
+            print ("You got a single.")
             break
         elif overall_speed_of_ball >= 21 and overall_speed_of_ball <= 60 and angle_of_bat >= 91:
-            print ("You got to the outfield")
+            print ("You got to the outfield.")
             ball_catch = overall_speed_of_ball / speed_of_outfielder
 # Uses ball_catch to determine if the outfielder can reach the ball in time and determine what you get for how many bases you get
             if ball_catch <= 7:
-                print ("Ball caught")
+                print ("Ball caught.")
                 break
             elif ball_catch >= 8 and ball_catch <= 10:
-                print ("You got a single")
+                print ("You got a single.")
                 break
             elif ball_catch >= 11 and ball_catch <= 17:
-                print("You got a double")
+                print("You got a double.")
                 break
             elif ball_catch >= 18 and ball_catch <= 30:
-                print("You got a triple")
+                print("You got a triple.")
                 break
             else:
                 print ("HOMERUN!!!")
